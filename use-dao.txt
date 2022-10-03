@@ -1,0 +1,18 @@
+
+require "../../dao/loai.php";
+extract($_REQUEST);
+if(exist_param("btn_insert")){
+loai_insert($ten_loai);
+}
+else if(exist_param("btn_update")){
+loai_update($ma_loai, $ten_loai);
+}
+else if(exist_param("btn_delete")){
+loai_delete($ma_loai);
+}
+else if(exist_param("btn_edit")){
+$item = loai_select_by_id($ma_loai);
+}
+else if(exist_param("btn_list")){
+$items = loai_select_all();
+}
