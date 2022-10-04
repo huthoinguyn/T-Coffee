@@ -5,7 +5,7 @@
 }
 
 body {
-  background:url("../content/images/nen.png");
+  background:url("../content/image/nen.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -167,7 +167,7 @@ input {
 }
 
 .overlay {
-  background:url("../content/images/hinh1.jpg");
+  background:url("../content/image/hinh1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-size: cover;

@@ -12,13 +12,8 @@
       referrerpolicy="no-referrer"
     />
     <title>Document</title>
-    <link rel="stylesheet" href="content/css/giohang.css" />
-    <style>
-      .icon a i{
-        font-size:50px;
-        color: #ffffff;
-      }
-    </style>
+    <link rel="stylesheet" href="../content/css/giohang.css" />
+    
   </head>
   <body>
     
