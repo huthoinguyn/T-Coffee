@@ -15,9 +15,7 @@ function khach_hang_update($ma_kh, $mat_khau, $ho_ten, $kich_hoat, $hinh, $email
 
 function khach_hang_delete($ma_kh, $mat_khau, $ho_ten, $kich_hoat, $hinh, $email, $vai_tro)
 {
-<<<<<<< HEAD
 
-=======
     $sql = "DELETE FROM Khach_hang WHERE ma_kh=?";
     if (is_array($ma_kh)) {
         foreach ($ma_kh as $ma) {
@@ -26,37 +24,31 @@ function khach_hang_delete($ma_kh, $mat_khau, $ho_ten, $kich_hoat, $hinh, $email
     } else {
         pdo_execute($sql, $ma_kh);
     }
->>>>>>> a21efbafa473073065b07785524e124b60735e77
+
 }
 
 function khach_hang_select_all($ma_kh, $mat_khau, $ho_ten, $kich_hoat, $hinh, $email, $vai_tro)
 {
-<<<<<<< HEAD
-    
-=======
+
     $sql = "SELECT * FROM khach_hang";
     return pdo_query($sql);
->>>>>>> a21efbafa473073065b07785524e124b60735e77
+
 }
 
 function khach_hang_select_by_id($ma_kh, $mat_khau, $ho_ten, $kich_hoat, $hinh, $email, $vai_tro)
 {
-<<<<<<< HEAD
 
-=======
     $sql = "SELECT * FROM khach_hang WHERE ma_kh=?";
     return pdo_query_one($sql, $ma_kh);
->>>>>>> a21efbafa473073065b07785524e124b60735e77
+
 }
 
 function khach_hang_exist($ma_kh, $mat_khau, $ho_ten, $kich_hoat, $hinh, $email, $vai_tro)
 {
-<<<<<<< HEAD
 
-=======
     $sql = "SELECT count(*) FROM khach_hang WHERE ma_kh=?";
     return pdo_query_value($sql, $ma_kh) > 0;
->>>>>>> a21efbafa473073065b07785524e124b60735e77
+
 }
 
 function khach_hang_change_password()
