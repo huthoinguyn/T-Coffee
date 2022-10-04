@@ -12,12 +12,12 @@
       referrerpolicy="no-referrer"
     />
     <title>Document</title>
-    <link rel="stylesheet" href="../content/css/giohang.css" />
+    <link rel="stylesheet" href="../content/css/dangnhap.css" />
     
   </head>
   <body>
     
-    <h2 class="title">Wellcome The CiTy Coffee Shop !!!</h2>
+    <h2 class="title"></h2>
     <div class="container" id="container">
       <div class="form-container sign-up-container">
         <form action="#" method="POST">
@@ -28,9 +28,11 @@
             <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
           </div>
           <span>or use your email for registration</span>
-          <input name="username" type="text" placeholder="Name" />
+          <input name="username" type="text" placeholder="Usename" />
+          <input name="name" type="text" placeholder="Name" />
           <input name="email" type="email" placeholder="Email" />
           <input name="password" type="password" placeholder="Password" />
+          <input name="confirmpassword" type="text" placeholder="ConfirmPassword" />
           <button type="submit" name="dangky">Sign Up</button>
         </form>
       </div>
@@ -43,8 +45,9 @@
             <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
           </div>
           <span>or use your account</span>
-          <input name="username" type="text" placeholder="Name" />
+          <input name="username" type="text" placeholder="UseName" />
           <input name="password" type="password" placeholder="Password" />
+          
           <a href="#">Forgot your password?</a>
           <button name="dangnhap" type="dangnhap">Sign In</button>
         </form>
