@@ -15,20 +15,25 @@ function khach_hang_update($ma_kh, $mat_khau, $ho_ten, $kich_hoat, $hinh, $email
 
 function khach_hang_delete()
 {
+
 }
 
 function khach_hang_select_all()
 {
+    
 }
 
 function khach_hang_select_by_id()
 {
+
 }
 
 function khach_hang_exist()
 {
+
 }
 
 function khach_hang_change_password()
 {
+
 }
