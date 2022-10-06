@@ -13,7 +13,7 @@
 
     <title>T-Coffee</title>
     <style>
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
         header {
             height: 150px;
         }
@@ -29,9 +29,9 @@
         /* .logo {
             
         } */
-=======
+/* =======
         
->>>>>>> 43539b577888b902ac36b1fae831995432ff47d8
+>>>>>>> 43539b577888b902ac36b1fae831995432ff47d8 */
     </style>
 </head>
 
