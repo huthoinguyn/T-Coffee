@@ -41,11 +41,7 @@
     </style>
 </head>
 
-<body>
-<<<<<<< HEAD
-    <h1>Welcome to T-Coffee</h1>
-    <h1>demo phucthinh</h1>
-=======
+    <body>
     <div class="container">
         <header>
             <div class="logo">
