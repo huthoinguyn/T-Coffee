@@ -187,7 +187,15 @@
 </head>
 
 <body>
+<<<<<<< HEAD
     <main>
+=======
+<<<<<<< HEAD
+    <h1>Welcome to T-Coffee</h1>
+    <h1>demo phucthinh</h1>
+=======
+    <div class="container">
+>>>>>>> 6f649a71860bb1d0f2b084c774eb06d0e730aba8
         <header>
             <div class="logo">
                 T-Coffee
@@ -342,6 +350,7 @@
         });
     </script>
 
+>>>>>>> cf21bef9ded7958facc0811db65d24393ce111fa
 </body>
 
 </html>
