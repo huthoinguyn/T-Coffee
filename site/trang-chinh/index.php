@@ -42,6 +42,10 @@
 </head>
 
 <body>
+<<<<<<< HEAD
+    <h1>Welcome to T-Coffee</h1>
+    <h1>demo phucthinh</h1>
+=======
     <div class="container">
         <header>
             <div class="logo">
@@ -104,6 +108,7 @@
 
     </script>
 
+>>>>>>> cf21bef9ded7958facc0811db65d24393ce111fa
 </body>
 
 </html>
