@@ -10,10 +10,11 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../../content/css/testim.css">
     <link rel="stylesheet" href="../../content/css/style.css">
+    <link rel="stylesheet" href="../../content/css/sanpham.css">
 
     <title>T-Coffee</title>
     <style>
-        
+
     </style>
 </head>
 
@@ -25,8 +26,6 @@
     <body>
         <main>
             <!-- <<<<<<< HEAD -->
-
-
             <header>
                 <div class="logo">
                     T-Coffee
@@ -56,6 +55,55 @@
                 <section class="favourite">
                     <div class="row">
                         <h3 class="title">Top 10</h3>
+                    </div>
+                    <div class="row">
+                        <div class="grid">
+                            <div class="grid-column">
+                                <a class="product" href="sanpham-chitiet.php">
+                                    <div class="product-image">
+                                        <img src="https://assets.codepen.io/285131/cosmonaut.jpg" />
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="product-info">
+                                            <h2 class="product-title">Thoi Capuchino</h2>
+                                            <p class="product-price">$ 10</p>
+                                        </div>
+                                        <button class="product-action"><i class="fa-solid fa-plus"></i></button>
+                                        <!-- <button class="product-action"><i class="material-icons-outlined">favorite_border</i></button> -->
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-column">
+                                <a class="product" href="sanpham-chitiet.php">
+                                    <div class="product-image">
+                                        <img src="https://assets.codepen.io/285131/cosmonaut.jpg" />
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="product-info">
+                                            <h2 class="product-title">Thoi Capuchino</h2>
+                                            <p class="product-price">$ 10</p>
+                                        </div>
+                                        <button class="product-action"><i class="fa-solid fa-plus"></i></button>
+                                        <!-- <button class="product-action"><i class="material-icons-outlined">favorite_border</i></button> -->
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-column">
+                                <a class="product" href="sanpham-chitiet.php">
+                                    <div class="product-image">
+                                        <img src="https://assets.codepen.io/285131/cosmonaut.jpg" />
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="product-info">
+                                            <h2 class="product-title">Thoi Capuchino</h2>
+                                            <p class="product-price">$ 10</p>
+                                        </div>
+                                        <button class="product-action"><i class="fa-solid fa-plus"></i></button>
+                                        <!-- <button class="product-action"><i class="material-icons-outlined">favorite_border</i></button> -->
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <section class="cate">
