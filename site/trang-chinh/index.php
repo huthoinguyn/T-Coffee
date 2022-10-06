@@ -19,9 +19,9 @@
             position: relative;
         }
 
-        .logo {
+        /* .logo {
             
-        }
+        } */
     </style>
 </head>
 
