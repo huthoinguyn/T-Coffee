@@ -7,7 +7,7 @@ window.onscroll = (e) => {
     header.classList.add("is-fixed");
     header.style.height = "80px";
     body.style.paddingTop = header.offsetHeight + "px";
-  } else {
+  } else if ((window.scrollY < 2)) {
     header.classList.remove("is-fixed");
     header.style.height = "120px";
     body.style.paddingTop = 0;
