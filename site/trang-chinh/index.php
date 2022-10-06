@@ -186,12 +186,12 @@
     </style>
 </head>
 
-<<<<<<< HEAD
+<!-- <<<<<<< HEAD -->
     <body>
-=======
+<!-- ======= -->
 <body>
     <main>
-<<<<<<< HEAD
+<!-- <<<<<<< HEAD -->
 
     <div class="container">
         <header>
@@ -222,13 +222,13 @@
             <section class="favourite">
                 <div class="row">
                     <h3 class="title">Top 10</h3>
-=======
+<!-- ======= -->
         <div class="container">
             <header>
                 <div class="logo">
                     T-Coffee
                     <!-- <img src="https://coffeeluck.themerex.net/wp-content/uploads/2016/08/logo.png" alt=""> -->
->>>>>>> b427df72857b9e23d36b43aa4d7c87407204fbc6
+<!-- >>>>>>> b427df72857b9e23d36b43aa4d7c87407204fbc6 -->
                 </div>
                 <nav>
                     <ul>
