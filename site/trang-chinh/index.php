@@ -13,222 +13,25 @@
 
     <title>T-Coffee</title>
     <style>
-        .favourite {
-            min-height: 100vh;
-        }
-
-        section {
-            padding: 24px;
-            min-height: 100vh;
-        }
-
-        section .title {
-            margin-bottom: 28px;
-            font-size: calc(1vw + 1vh);
-            white-space: nowrap;
-            color: var(--text-color);
-            text-align: left;
-            width: 100%;
-            overflow: hidden;
-        }
-
-        .cate .title {
-            flex: 0 0 100%;
-            text-align: center;
-            font-size: calc(2vw + 2vh);
-        }
-
-        .cate .desc {
-            margin: 0 auto;
-            flex: 0 0 60%;
-            text-align: center;
-            font-size: 18px;
-        }
-
-        .cate .cate-item {
-            margin-top: 24px;
-            flex: 0 0 33.33%;
-            max-width: 33.33%;
-            margin-bottom: 30px;
-            padding: 12px;
-        }
-
-        .cate-img {
-            width: 100%;
-            overflow: hidden;
-        }
-
-        .cate-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .cate-content {
-            padding-top: 24px;
-            text-align: center;
-        }
-
-        .cate-content h4 {
-            font-size: 18px;
-            text-transform: uppercase;
-            margin-bottom: 6px;
-            font-weight: 600;
-        }
-
-        .cate-content p {
-            color: #999;
-            font-weight: 600;
-            font-size: 15px;
-        }
-
-        .container {
-            max-width: 1100px;
-            width: 100%;
-            margin: auto;
-        }
-
-        section .container {
-            /* padding-top: 60px; */
-            /* padding-bottom: 70px; */
-        }
-
-        footer {
-            width: 100vw;
-            max-width: 100vw;
-            position: relative;
-            left: calc(-50vw + 50%);
-            background-color: var(--bg-color-white);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-        }
-
-
-        footer .foot-logo h3 {
-            flex: 0 0 100%;
-            max-width: 100%;
-            text-align: center;
-            font-size: 36px;
-            font-family: 'Lily Script One', cursive;
-        }
-
-        footer .foot-logo p {
-            flex: 0 0 100%;
-            max-width: 100%;
-            text-align: center;
-            font-size: 18px;
-        }
-
-        footer .foot-col {
-            margin-top: 24px;
-            flex: 0 0 33.33%;
-            max-width: 33.33%;
-            margin-bottom: 30px;
-            padding: 12px;
-        }
-
-        footer .foot-col .title {
-            font-size: 18px;
-            margin-bottom: 16px;
-            text-align: center;
-        }
-
-        footer .foot-col input {
-            padding: 12px 24px;
-            width: 100%;
-            border-radius: 4px;
-            border: 1px solid #ccc;
-        }
-
-        footer .foot-col p {
-            margin-top: 12px;
-            font-size: 16px;
-        }
-
-        footer .foot-col p a {
-            color: #ff6800;
-        }
-
-        footer .foot-col .contact p {
-            color: #555;
-            font-size: 18px;
-            margin-bottom: 12px;
-            text-align: center;
-        }
-
-        footer .foot-col .social {
-            max-width: fit-content;
-            margin: 0 auto;
-        }
-
-        footer .foot-col .social a {
-            color: #555;
-            font-size: 24px;
-            margin-right: 12px;
-        }
-
-        footer .copyright {
-            width: 100vw;
-            position: relative;
-            left: calc(-50vw + 50%);
-            padding: 12px;
-            background-color: #ccc;
-
-        }
-
-        footer .copyright p {
-            flex: 0 0 100%;
-            max-width: 100%;
-            text-align: center;
-        }
+        
     </style>
 </head>
 
 <!-- <<<<<<< HEAD -->
-    <body>
-<!-- ======= -->
-<body>
-    <main>
-<!-- <<<<<<< HEAD -->
 
-    <div class="container">
-        <header>
-            <div class="logo">
-                T-Coffee
-                <!-- <img src="https://coffeeluck.themerex.net/wp-content/uploads/2016/08/logo.png" alt=""> -->
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Coffee</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Hoi dap</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="slider">
-            <div class="slider-img">
-                <img src="https://coffeeluck.themerex.net/wp-content/uploads/2016/08/slide1.jpg" alt="">
-            </div>
-            <div class="slider-content">
-                <h3><span class="typing">Coffee with our story</span></h3>
-                <p>visit our the best coffee shop</p>
-            </div>
-        </div>
-        <div class="content">
-            <section class="favourite">
-                <div class="row">
-                    <h3 class="title">Top 10</h3>
-<!-- ======= -->
-        <div class="container">
+<body>
+    <!-- ======= -->
+
+    <body>
+        <main>
+            <!-- <<<<<<< HEAD -->
+
+
             <header>
                 <div class="logo">
                     T-Coffee
                     <!-- <img src="https://coffeeluck.themerex.net/wp-content/uploads/2016/08/logo.png" alt=""> -->
-<!-- >>>>>>> b427df72857b9e23d36b43aa4d7c87407204fbc6 -->
+                    <!-- >>>>>>> b427df72857b9e23d36b43aa4d7c87407204fbc6 -->
                 </div>
                 <nav>
                     <ul>
@@ -362,23 +165,23 @@
                     </div>
                 </div>
             </footer>
-    </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
-    <script src="../../content/js/script.js"></script>
-    <script src="../../content/js/testim.js"></script>
-    <script>
-        const typed = new Typed(".typing", {
-            strings: [
-                "Coffee with our story",
-                "Fresh, Organic, Handcrafted",
-                "Experence the full taste",
-            ],
-            typeSpeed: 100,
-            backSpeed: 60,
-            loop: true,
-        });
-    </script>
+        </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+        <script src="../../content/js/script.js"></script>
+        <script src="../../content/js/testim.js"></script>
+        <script>
+            const typed = new Typed(".typing", {
+                strings: [
+                    "Coffee with our story",
+                    "Fresh, Organic, Handcrafted",
+                    "Experence the full taste",
+                ],
+                typeSpeed: 100,
+                backSpeed: 60,
+                loop: true,
+            });
+        </script>
 
-</body>
+    </body>
 
 </html>
