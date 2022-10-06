@@ -1,25 +1,37 @@
 <?php
 
-function hang_hoa_insert(){
-
+function hang_hoa_insert( $ten_hh,$don_gia,$giam_gia,$hinh,$ngay_nhap,$mo_ta,$dat_biet,$so_luot_xem,$ma_loai){
+    $sql = "INSERT INTO hang_ho(ten_hh,don_gia,giam_gia,hinh,ngay_nhap,mo_ta,dat_biet,so_luot_xem,ma_loai) VALUES(?)";
+    pdo_execute($sql,$ten_hh,$don_gia,$giam_gia,$hinh,$ngay_nhap,$mo_ta,$dat_biet,$so_luot_xem,$ma_loai);
 }
 
-function hang_hoa_update(){
-
+function hang_hoa_update($ma_hh, $ten_hh,$don_gia,$giam_gia,$hinh,$ngay_nhap,$mo_ta,$dat_biet,$so_luot_xem,$ma_loai){
+    $sql = "UPDATE hang_hoa SET ten_hh=?,don_gia=?,giam_gia=?,hinh=?,ngay_nhap=?,mo_ta=?,dat_biet=?,so_luot_xem=?,ma_loai=?, WHERE ma_hh=?";
+    pdo_execute($sql,$ten_hh,$don_gia,$giam_gia,$hinh,$ngay_nhap,$mo_ta,$dat_biet,$so_luot_xem,$ma_loai,$ma_hh);
 }
 
-function hang_hoa_delete(){
-
+function hang_hoa_delete( $ma_hh,$ten_hh,$don_gia,$giam_gia,$hinh,$ngay_nhap,$mo_ta,$dat_biet,$so_luot_xem,$ma_loai){
+    $sql = "DELETE FROM hang_hoa WHERE ma_hh=?";
+    if (is_array($ma_hh)) {
+        foreach ($ma_hh as $ma) {
+            pdo_execute($sql, $ma);
+        }
+    } else {
+        pdo_execute($sql, $ma_hh);
+    }
 }
 
-function hang_hoa_select_all(){
-    
+function hang_hoa_select_all( $ma_hh,$ten_hh,$don_gia,$giam_gia,$hinh,$ngay_nhap,$mo_ta,$dat_biet,$so_luot_xem,$ma_loai){
+    $sql = "SELECT * FROM hang_hoa";
+    return pdo_query($sql);
 }
-function hang_hoa_select_by_id(){
-    
+function hang_hoa_select_by_id( $ma_hh,$ten_hh,$don_gia,$giam_gia,$hinh,$ngay_nhap,$mo_ta,$dat_biet,$so_luot_xem,$ma_loai){
+    $sql = "SELECT * FROM hang_hoa WHERE ma_hh=?";
+    return pdo_query_one($sql, $ma_hh);
 }
-function hang_hoa_exist(){
-    
+function hang_hoa_exist( $ma_hh,$ten_hh,$don_gia,$giam_gia,$hinh,$ngay_nhap,$mo_ta,$dat_biet,$so_luot_xem,$ma_hang_hoa){
+    $sql = "SELECT count(*) FROM hang_hoa WHERE ma_hh=?";
+    return pdo_query_value($sql, $ma_hh) > 0;
 }
 function hang_hoa_tang_so_luot_xem() {
     
