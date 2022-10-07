@@ -8,16 +8,15 @@
 /* Pretty Stuff */
 
 .contact-form-container {
-  background: #F4F3F3;
+  background: #f4f3f3;
   font-family: "Lato", sans-serif;
-  display: flex;
-  justify-content: center;
+  margin: 0 auto;
 }
 
 .contact-us {
   position: relative;
   width: 250px;
-  background: #C3E0EC;
+  background: #c3e0ec;
   overflow: hidden;
 }
 .contact-us:before {
@@ -27,7 +26,7 @@
   left: -100px;
   height: 250px;
   width: 400px;
-  background: #F8B7D8;
+  background: #f8b7d8;
   transform: rotate(25deg);
 }
 .contact-us:after {
@@ -37,7 +36,7 @@
   right: -100px;
   height: 270px;
   width: 400px;
-  background: #9ED8EB;
+  background: #9ed8eb;
   transform: rotate(-25deg);
 }
 
@@ -86,17 +85,23 @@
   font-weight: 300;
 }
 
-.address, .email, .phone {
+.address,
+.email,
+.phone {
   text-align: center;
   padding: 20px 0;
   color: #444;
 }
-.address h3, .email h3, .phone h3 {
+.address h3,
+.email h3,
+.phone h3 {
   font-size: 1rem;
   font-weight: 300;
 }
-.address i, .email i, .phone i {
-  color: #F8B7D8;
+.address i,
+.email i,
+.phone i {
+  color: #f8b7d8;
   font-size: 1.7rem;
   margin-bottom: 20px;
 }
@@ -109,7 +114,8 @@ form {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   background: white;
 }
-form input, form textarea {
+form input,
+form textarea {
   background: white;
   display: block;
   margin: 20px auto;
@@ -141,7 +147,7 @@ form button {
   border: 0;
   border-radius: 20px;
   bottom: -20px;
-  background: #9ED8EB;
+  background: #9ed8eb;
   color: white;
   font-size: 1.1rem;
   font-weight: 300;
