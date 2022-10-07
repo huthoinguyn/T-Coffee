@@ -1,8 +1,3 @@
-<?php if (isset($_GET['logout']) && $_GET['logout'] == 1) {
-    unset($_SESSION['login']);
-    header("Location:login.php");
-}
-?>
 <nav>
     <div class="logo-name">
         <div class="logo-image">
@@ -10,9 +5,7 @@
         </div>
 
         <span class="logo_name">
-            <?php if (isset($_SESSION['login'])) {
-                echo $_SESSION['login'];
-            } ?>
+            Phan Thanh Qui
         </span>
     </div>
     <div class="menu-items">
@@ -34,7 +27,7 @@
                     <i class="uil uil-chart"></i>
                     <span class="link-name">Category</span>
                 </a>
-            </li>
+            </li> 
             <li>
                 <a href="index.php?manage=customer&handle=1">
                     <i class="uil uil-thumbs-up"></i>

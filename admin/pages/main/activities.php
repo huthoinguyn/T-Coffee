@@ -21,43 +21,22 @@
             <span class="data-title">Status</span>
         </div>
     </div>
-    <?php
-    $conn = new mysqli("localhost", "root", "", "fashion");
 
-    $sql_render_cus = "SELECT * FROM receipt r INNER JOIN customer c ON r.id_cus = c.id ORDER BY r.id_hd ASC";
-    $querry_cus = mysqli_query($conn, $sql_render_cus);
-
-    $sql_chitiethoadon = "SELECT * FROM receiptdetail ORDER BY id_receipt DESC";
-    $querry_chitiethoadon = mysqli_query($conn, $sql_chitiethoadon);
-    ?>
-
-
-
-
-    <?php
-    while ($chitiethoadon = mysqli_fetch_array($querry_chitiethoadon)) {
-    ?>
-
-        <?php
-        while ($cus = mysqli_fetch_array($querry_cus)) {
-        ?>
-            <div class="activity-data">
-                <div class="data names">
-                    <span class="data-list"><?php echo $cus['name'] ?></span>
-                </div>
-                <div class="data email">
-                    <span class="data-list"><?php echo $cus['phone'] ?></span>
-                </div>
-                <div class="data joined">
-                    <span class="data-list"><?php echo $cus['time'] ?></span>
-                </div>
-                <div class="data type">
-                    <span class="data-list">New</span>
-                </div>
-                <div class="data status">
-                    <span style="text-transform: capitalize;" class="data-list"><?php echo $cus['status'] ?></span>
-                </div>
-            </div>
-        <?php } ?>
-    <?php } ?>
+    <div class="activity-data">
+        <div class="data names">
+            <span class="data-list">Le Tan Tai</span>
+        </div>
+        <div class="data email">
+            <span class="data-list">Email@gmail.com</span>
+        </div>
+        <div class="data joined">
+            <span class="data-list">Today</span>
+        </div>
+        <div class="data type">
+            <span class="data-list">New</span>
+        </div>
+        <div class="data status">
+            <span style="text-transform: capitalize;" class="data-list"></span>
+        </div>
+    </div>
 </div>

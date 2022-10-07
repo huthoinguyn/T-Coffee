@@ -1,13 +1,6 @@
-       <?php if (isset($_GET['logout']) && $_GET['logout'] == 1) {
-            unset($_SESSION['login']);
-            header("Location:login.php");
-        }
-        ?>
        <header>
            <ul class="dropdown-content" id="user_dropdown">
-               <li><a class="indigo-text" href="#!"><?php if (isset($_SESSION['login'])) {
-                                                        echo $_SESSION['login'];
-                                                    } ?></a></li>
+               <li><a class="indigo-text" href="#!">Phan Thanh Qui</a></li>
                <li><a class="indigo-text" href="index.php?logout=1">Logout</a></li>
            </ul>
 

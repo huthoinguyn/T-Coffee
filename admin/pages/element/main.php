@@ -20,6 +20,7 @@
         $manage = '';
         $handle = '';
     }
+    include '../pages/main/dashboard.php';
     ?>
 </main>
 <!-- <script src="./module/product/js/upload.js"></script> -->

@@ -9,63 +9,29 @@
       <div class="box box1">
         <i class="uil uil-thumbs-up"></i>
         <span class="text">Product</span>
-        <?php $conn = mysqli_connect('localhost', 'root', '', 'fashion');
-        $query_prod = 'SELECT * FROM products';
-        $prod_result = mysqli_query($conn, $query_prod);
-        $prod_total = mysqli_num_rows($prod_result);
-        if ($prod_total) {
-        ?>
-          <span class="number"><?php echo $prod_total ?></span>
-        <?php
-        } else {
-        ?>
-          <span class="number"> Product Emty</span>
-        <?php
-        }
-        ?>
+        <span class="number">2</span>
       </div>
       <div class="box box2">
         <i class="uil uil-comments"></i>
-        <span class="text">Customer</span>
-        <?php $conn = mysqli_connect('localhost', 'root', '', 'fashion');
-        $query_cus = 'SELECT * FROM customer';
-        $cus_result = mysqli_query($conn, $query_cus);
-        $cus_total = mysqli_num_rows($cus_result);
-        if ($cus_total) {
-        ?>
-          <span class="number"><?php echo $cus_total ?></span>
-        <?php
-        } else {
-        ?>
-          <span class="number"> Customer Emty</span>
-        <?php
-        }
-        ?>
+        <span class="text">Cate</span>
+        <span class="number">1</span>
       </div>
       <div class="box box3">
         <i class="uil uil-share"></i>
-        <span class="text">Receipt</span>
-        <?php $conn = mysqli_connect('localhost', 'root', '', 'fashion');
-        $query_prod = 'SELECT * FROM receipt';
-        $prod_result = mysqli_query($conn, $query_prod);
-        $prod_total = mysqli_num_rows($prod_result);
-        if ($prod_total) {
-        ?>
-          <span class="number"><?php echo $prod_total ?></span>
-        <?php
-        } else {
-        ?>
-          <span class="number"> Cart Emty</span>
-        <?php
-        }
-        ?>
+        <span class="text">Comments</span>
+        <span class="number">1</span>
+      </div>
+      <div class="box box4">
+        <i class="uil uil-share"></i>
+        <span class="text">Customer</span>
+        <span class="number">1</span>
       </div>
     </div>
   </div>
 
   <?php
-   include('pages/main/chart.php');
-   include('pages/main/activities.php');
-   ?>
-  
+  include('../pages/main/chart.php');
+  include('../pages/main/activities.php');
+  ?>
+
 </div>

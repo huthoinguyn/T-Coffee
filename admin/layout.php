@@ -11,9 +11,9 @@
 
 <body>
     <h1>Admin Panel</h1>
-    <nav>
-        <?php require 'menu.php'; ?>
-    </nav>
+    <!-- <nav>
+        <?php //require 'menu.php'; ?>
+    </nav> -->
     <?php require $VIEW_NAME ?>
 </body>
 
