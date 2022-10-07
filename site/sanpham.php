@@ -33,7 +33,7 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="">Home</a></li>
+                        <li><a href="../site/trang-chinh/index.php">Home</a></li>
                         <li><a href="">Coffee</a></li>
                         <li><a href="">About</a></li>
                         <li><a href="">Contact</a></li>
