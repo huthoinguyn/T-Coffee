@@ -12,10 +12,6 @@
     <link rel="stylesheet" href="../../content/css/testim.css">
     <link rel="stylesheet" href="../../content/css/style.css">
 
-    <title>T-Coffee</title>
-    <style>
-
-    </style>
 </head>
 
 <body>

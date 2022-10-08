@@ -11,39 +11,39 @@
     <div class="menu-items">
         <ul class="nav-links">
             <li>
-                <a href="index.php?manage=dasboard&handle=1">
+                <a href="?trang-chu">
                     <i class="uil uil-estate"></i>
                     <span class="link-name">Dahsboard</span>
                 </a>
             </li>
             <li>
-                <a href="index.php?manage=product&handle=1">
+                <a href="?hang-hoa">
                     <i class="uil uil-files-landscapes"></i>
                     <span class="link-name">Product</span>
                 </a>
             </li>
             <li>
-                <a href="index.php?manage=category&handle=1">
+                <a href="?loai-hang">
                     <i class="uil uil-chart"></i>
                     <span class="link-name">Category</span>
                 </a>
-            </li> 
+            </li>
             <li>
-                <a href="index.php?manage=customer&handle=1">
+                <a href="?khach-hang">
                     <i class="uil uil-thumbs-up"></i>
                     <span class="link-name">Customer</span>
                 </a>
             </li>
             <li>
-                <a href="index.php?manage=blog&handle=1">
+                <a href="?binh-luan">
                     <i class="uil uil-comments"></i>
-                    <span class="link-name">Blog</span>
+                    <span class="link-name">Comments</span>
                 </a>
             </li>
             <li>
-                <a href="index.php?manage=cart&handle=1">
+                <a href="?thong-ke">
                     <i class="uil uil-share"></i>
-                    <span class="link-name">Cart</span>
+                    <span class="link-name">Thong ke</span>
                 </a>
             </li>
         </ul>
