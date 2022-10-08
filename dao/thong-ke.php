@@ -1,6 +1,6 @@
 <?php
 
-require_once 'pdo.php';
+// require_once 'pdo.php';
 
 function thong_ke_hang_hoa(){
     
