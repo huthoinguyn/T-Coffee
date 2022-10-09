@@ -1,6 +1,6 @@
 <?php
-require "../../global.php";
-require "../../dao/loai.php";
+// require "../../global.php";
+// require "../../dao/loai.php";
 extract($_REQUEST);
 if (exist_param("btn_insert")) {
     $VIEW_NAME = "loai-hang/new.php";

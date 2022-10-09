@@ -1,1 +1,2 @@
-<h3>Admin DashBoard</h3>
+<?php 
+include '../pages/main/dashboard.php';

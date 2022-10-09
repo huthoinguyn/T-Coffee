@@ -76,6 +76,7 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover{
 }
 
 .content-container {
+  width: 100%;
   /* margin-top: 32px; */
   text-align: center;
 }
