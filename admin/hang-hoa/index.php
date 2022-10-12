@@ -7,8 +7,9 @@
 //     $up_hinh = save_file("up_hinh", "$IMAGE_DIR/users/");
 //     $hinh = strlen(".$up_hinh.") > 0 ? $up_hinh : $hinh;
 // }
-// require "../../global.php";
-// require "../../dao/loai.php";
+require_once "../../global.php";
+require_once "../../pdo.php";
+require_once "../../dao/hang-hoa.php";
 
 
 extract($_REQUEST);
@@ -29,8 +30,17 @@ require "../layout.php";
 
 if (exist_param("btn_insert")) {
     try {
-        hang_hoa_insert($ten_hh, $don_gia, $giam_gia, $hinh, $ngay_nhap, $mo_ta, $dat_biet, $so_luot_xem, $ma_loai);
-        unset($ten_hh, $don_gia, $giam_gia, $hinh, $ngay_nhap, $mo_ta, $dat_biet, $so_luot_xem, $ma_loai);
+        $ten_hh = $_POST['ten_hh'];
+        $don_gia = $_POST['don_gia'];
+        $giam_gia = $_POST['giam_gia'];
+        $hinh = $_POST['hinh'];
+        $mo_ta = $_POST['mo_ta'];
+        $dac_biet = $_POST['dac_biet'];
+        $so_luot_xem = $_POST['so_luot_xem'];
+        $ma_loai = $_POST['ma_loai'];
+        $ngay_nhap = $_POST['ngay_nhap'];
+        hang_hoa_insert($ten_hh, $don_gia, $giam_gia, $hinh, $ngay_nhap, $mo_ta, $dac_biet, $so_luot_xem, $ma_loai);
+        unset($ten_hh, $don_gia, $giam_gia, $hinh, $ngay_nhap, $mo_ta, $dac_biet, $so_luot_xem, $ma_loai);
         $MESSAGE = "Thêm mới thành công!";
     } catch (Exception $exc) {
         $MESSAGE = "Thêm mới thất bại!";
@@ -38,7 +48,7 @@ if (exist_param("btn_insert")) {
     $VIEW_NAME = "hang-hoa/new.php";
 } else if (exist_param("btn_update")) {
     try {
-        hang_hoa_update($ma_hh, $ten_hh, $don_gia, $giam_gia, $hinh, $ngay_nhap, $mo_ta, $dat_biet, $so_luot_xem, $ma_loai);
+        hang_hoa_update($ma_hh, $ten_hh, $don_gia, $giam_gia, $hinh, $ngay_nhap, $mo_ta, $dac_biet, $so_luot_xem, $ma_loai);
         $MESSAGE = "Cập nhật thành công!";
     } catch (Exception $exc) {
         $MESSAGE = "Cập nhật thất bại!";

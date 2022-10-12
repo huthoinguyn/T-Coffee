@@ -57,7 +57,7 @@
                     </div>
                     <div class="grid">
                         <div class="grid-column">
-                            <a class="product" href="sanpham-chitiet.php">
+                            <a class="product" href="?sanpham-chitiet">
                                 <div class="product-image">
                                     <img src="https://assets.codepen.io/285131/cosmonaut.jpg" />
                                 </div>
@@ -72,7 +72,7 @@
                             </a>
                         </div>
                         <div class="grid-column">
-                            <a class="product" href="sanpham-chitiet.php">
+                            <a class="product" href="?sanpham-chitiet">
                                 <div class="product-image">
                                     <img src="https://assets.codepen.io/285131/cosmonaut.jpg" />
                                 </div>
@@ -87,7 +87,7 @@
                             </a>
                         </div>
                         <div class="grid-column">
-                            <a class="product" href="sanpham-chitiet.php">
+                            <a class="product" href="sanpham-chitiet">
                                 <div class="product-image">
                                     <img src="https://assets.codepen.io/285131/cosmonaut.jpg" />
                                 </div>

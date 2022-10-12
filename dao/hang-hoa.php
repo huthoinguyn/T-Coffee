@@ -1,15 +1,15 @@
 <?php
 
-function hang_hoa_insert($ten_hh, $don_gia, $giam_gia, $hinh, $ngay_nhap, $mo_ta, $dat_biet, $so_luot_xem, $ma_loai)
+function hang_hoa_insert($ten_hh, $don_gia, $giam_gia, $hinh, $ngay_nhap, $mo_ta, $dac_biet, $so_luot_xem, $ma_loai)
 {
-    $sql = "INSERT INTO hang_ho(ten_hh,don_gia,giam_gia,hinh,ngay_nhap,mo_ta,dat_biet,so_luot_xem,ma_loai) VALUES(?)";
-    pdo_execute($sql, $ten_hh, $don_gia, $giam_gia, $hinh, $ngay_nhap, $mo_ta, $dat_biet, $so_luot_xem, $ma_loai);
+    $sql = "INSERT INTO hang_ho(ten_hh,don_gia,giam_gia,hinh,ngay_nhap,mo_ta,dac_biet,so_luot_xem,ma_loai) VALUES(?)";
+    pdo_execute($sql, $ten_hh, $don_gia, $giam_gia, $hinh, $ngay_nhap, $mo_ta, $dac_biet, $so_luot_xem, $ma_loai);
 }
 
-function hang_hoa_update($ma_hh, $ten_hh, $don_gia, $giam_gia, $hinh, $ngay_nhap, $mo_ta, $dat_biet, $so_luot_xem, $ma_loai)
+function hang_hoa_update($ma_hh, $ten_hh, $don_gia, $giam_gia, $hinh, $ngay_nhap, $mo_ta, $dac_biet, $so_luot_xem, $ma_loai)
 {
-    $sql = "UPDATE hang_hoa SET ten_hh=?,don_gia=?,giam_gia=?,hinh=?,ngay_nhap=?,mo_ta=?,dat_biet=?,so_luot_xem=?,ma_loai=?, WHERE ma_hh=?";
-    pdo_execute($sql, $ten_hh, $don_gia, $giam_gia, $hinh, $ngay_nhap, $mo_ta, $dat_biet, $so_luot_xem, $ma_loai, $ma_hh);
+    $sql = "UPDATE hang_hoa SET ten_hh=?,don_gia=?,giam_gia=?,hinh=?,ngay_nhap=?,mo_ta=?,dac_biet=?,so_luot_xem=?,ma_loai=?, WHERE ma_hh=?";
+    pdo_execute($sql, $ten_hh, $don_gia, $giam_gia, $hinh, $ngay_nhap, $mo_ta, $dac_biet, $so_luot_xem, $ma_loai, $ma_hh);
 }
 
 function hang_hoa_delete($ma_hh)

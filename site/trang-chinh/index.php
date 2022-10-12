@@ -26,7 +26,10 @@
         $VIEW_NAME = "trang-chinh/gop-y.php";
     } else if (exist_param("hoi-dap")) {
         $VIEW_NAME = "trang-chinh/hoi-dap.php";
-    } else {
+    }else if (exist_param("sanpham-chitiet")){
+        $VIEW_NAME = "trang-chinh/sanpham-chitiet.php";
+    }
+     else {
         require_once '../../dao/hang-hoa.php';
         $dac_biet_list = hang_hoa_select_dac_biet();
         $items_all = hang_hoa_select_all();
