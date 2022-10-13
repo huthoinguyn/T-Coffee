@@ -1,24 +1,13 @@
 <?php
-// require "../../global.php";
-// require "../../dao/loai.php";
+require "../../global.php";
+require "../../pdo.php";
+require "../../dao/loai.php";
 extract($_REQUEST);
-if (exist_param("btn_insert")) {
-    $VIEW_NAME = "loai-hang/new.php";
-} else if (exist_param("btn_update")) {
-    $VIEW_NAME = "loai-hang/edit.php";
-} else if (exist_param("btn_delete")) {
-    $VIEW_NAME = "loai-hang/list.php";
-} else if (exist_param("btn_edit")) {
-    $VIEW_NAME = "loai-hang/edit.php";
-} else if (exist_param("btn_list")) {
-    $VIEW_NAME = "loai-hang/list.php";
-} else {
-    $VIEW_NAME = "loai-hang/new.php";
-}
-require "../layout.php";
+
 
 if (exist_param("btn_insert")) {
     try {
+        $ten_loai = $_POST['loai_hang'];
         loai_insert($ten_loai);
         unset($ten_loai, $ma_loai);
         $MESSAGE = "Thêm mới thành công!";
@@ -28,6 +17,8 @@ if (exist_param("btn_insert")) {
     $VIEW_NAME = "loai-hang/new.php";
 } else if (exist_param("btn_update")) {
     try {
+        $ma_loai = $_POST['ma_loai'];
+        $ten_loai = $_POST['ten_loai'];
         loai_update($ma_loai, $ten_loai);
         $MESSAGE = "Cập nhật thành công!";
     } catch (Exception $exc) {
@@ -53,3 +44,5 @@ if (exist_param("btn_insert")) {
 } else {
     $VIEW_NAME = "loai-hang/new.php";
 }
+
+require "../layout.php";

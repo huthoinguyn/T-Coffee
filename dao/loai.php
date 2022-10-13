@@ -1,5 +1,5 @@
 <?php
-require_once 'pdo.php';
+// require_once 'pdo.php';
 
 // loai insert
 function loai_insert($ten_loai)
