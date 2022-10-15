@@ -48,7 +48,7 @@
                             <div id="faqCollapse-2" class="collapse" aria-labelledby="faqHeading-2" data-parent="#accordion">
                                 <div class="card-body">
                                     <p>First, I focus on the task at hand and prepare drinks as quickly as I can while still ensuring quality. I also make sure that everyone is contributing to the flow of the work and stay positive under the increased stress. It is important to remain as calm as I can to make sure that I don't get overwhelmed and that the job gets done. This means taking calming breaths when needed and reassuring the team that we can handle the situation.</p>
-                                </div>F
+                                </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" id="faqHeading-3">
