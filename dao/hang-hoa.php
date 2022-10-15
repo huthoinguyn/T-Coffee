@@ -49,7 +49,8 @@ function hang_hoa_select_top10()
 }
 function hang_hoa_select_dac_biet()
 {
-    return [];
+    $sql = "SELECT * FROM hang_hoa";
+    return pdo_query($sql);
 }
 function hang_hoa_select_by_loai($ma_loai)
 {

@@ -24,53 +24,28 @@
                 <h3 class="title">Top 10</h3>
             </div>
             <div class="row">
-                <div class="grid">
-                    <div class="grid-column">
-                        <a class="product" href="?sanpham-chitiet">
-                            <div class="product-image">
-                                <img src="https://assets.codepen.io/285131/cosmonaut.jpg" />
-                            </div>
-                            <div class="product-content">
-                                <div class="product-info">
-                                    <h2 class="product-title">Thoi Capuchino</h2>
-                                    <p class="product-price">$ 10</p>
+                <?php
+                foreach ($dac_biet_list as $item) {
+                ?>
+                    <div class="grid">
+                        <div class="grid-column">
+                            <a class="product" href="../hang-hoa/chi-tiet.php?ma_hh=<?= $item['ma_hh'] ?>">
+                                <div class="product-image">
+                                    <img src="../images/products/<?= $item['hinh'] ?>" />
                                 </div>
-                                <button class="product-action"><i class="fa-solid fa-plus"></i></button>
-                                <!-- <button class="product-action"><i class="material-icons-outlined">favorite_border</i></button> -->
-                            </div>
-                        </a>
-                    </div>
-                    <div class="grid-column">
-                        <a class="product" href="?sanpham-chitiet">
-                            <div class="product-image">
-                                <img src="https://assets.codepen.io/285131/cosmonaut.jpg" />
-                            </div>
-                            <div class="product-content">
-                                <div class="product-info">
-                                    <h2 class="product-title">Thoi Capuchino</h2>
-                                    <p class="product-price">$ 10</p>
+                                <div class="product-content">
+                                    <div class="product-info">
+                                        <h2 class="product-title"><?= $item['ten_hh'] ?></h2>
+                                        <p class="product-price"><?= $item['don_gia'] ?>VND</p>
+                                    </div>
+                                    <button class="product-action"><i class="fa-solid fa-plus"></i></button>
                                 </div>
-                                <button class="product-action"><i class="fa-solid fa-plus"></i></button>
-                                <!-- <button class="product-action"><i class="material-icons-outlined">favorite_border</i></button> -->
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
-                    <div class="grid-column">
-                        <a class="product" href="?sanpham-chitiet">
-                            <div class="product-image">
-                                <img src="https://assets.codepen.io/285131/cosmonaut.jpg" />
-                            </div>
-                            <div class="product-content">
-                                <div class="product-info">
-                                    <h2 class="product-title">Thoi Capuchino</h2>
-                                    <p class="product-price">$ 10</p>
-                                </div>
-                                <button class="product-action"><i class="fa-solid fa-plus"></i></button>
-                                <!-- <button class="product-action"><i class="material-icons-outlined">favorite_border</i></button> -->
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                <?php
+                }
+                ?>
             </div>
         </section>
         <section class="cate">
@@ -140,3 +115,24 @@
 </body>
 
 </html>
+
+
+
+<?php
+foreach ($items_all as $item) {
+    extract($item);
+?>
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail text-center">
+            <a href="chi-tiet.php?ma_hh=<?= $ma_hh ?>">
+                <img src="<?= $CONTENT_URL ?>/images/products/<?= $hinh ?>">
+            </a>
+            <div class="caption text-left">
+                <h3>$<?= number_format($don_gia, 2) ?></h3>
+                <p><?= $ten_hh ?></p>
+            </div>
+        </div>
+    </div>
+<?php
+}
+?>

@@ -20,19 +20,22 @@
     require '../../pdo.php';
     if (exist_param("gioi-thieu")) {
         $VIEW_NAME = "trang-chinh/gioi-thieu.php";
+    } else if (exist_param("coffee")) {
+        require_once '../../dao/hang-hoa.php';
+        $items_all = hang_hoa_select_all();
+        $VIEW_NAME = "trang-chinh/coffee.php";
     } else if (exist_param("lien-he")) {
         $VIEW_NAME = "trang-chinh/lien-he.php";
     } else if (exist_param("gop-y")) {
         $VIEW_NAME = "trang-chinh/gop-y.php";
     } else if (exist_param("hoi-dap")) {
         $VIEW_NAME = "trang-chinh/hoi-dap.php";
-    }else if (exist_param("sanpham-chitiet")){
-        $VIEW_NAME = "trang-chinh/sanpham-chitiet.php";
-    }
-     else {
+    } else if (exist_param("chi-tiet")) {
+        $VIEW_NAME = "../hang-hoa/chi-tiet.php";
+    } else {
         require_once '../../dao/hang-hoa.php';
-        $dac_biet_list = hang_hoa_select_dac_biet();
         $items_all = hang_hoa_select_all();
+        $dac_biet_list = hang_hoa_select_dac_biet();
         $VIEW_NAME = "trang-chinh/trang-chu.php";
     }
     require '../layout.php';
