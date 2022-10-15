@@ -5,7 +5,7 @@ session_start();
 * Định nghĩa các url cần thiết được sử dụng trong website
 */
 $ROOT_URL = "T-Coffee";
-$CONTENT_URL = "$ROOT_URL/content";
+$CONTENT_URL = "../../content";
 $ADMIN_URL = "$ROOT_URL/admin";
 $SITE_URL = "$ROOT_URL/site";
 /*

@@ -1,6 +1,6 @@
 <?php
 
-require_once 'pdo.php';
+// require_once 'pdo.php';
 function binh_luan_insert($ma_bl, $noi_dung, $ma_kh, $ngay_binh_luan)
 {
     $sql = "INSERT INTO binh_luan(ma_bl,noi_dung,ma_kh,ma_hh,ngay_binh_luan) VALUES(?)";
