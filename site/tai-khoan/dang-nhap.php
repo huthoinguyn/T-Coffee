@@ -1,6 +1,12 @@
 <?php
 
+require '../../pdo.php';
+require '../../global.php';
+require '../../dao/khach-hang.php';
+
 if (exist_param("btn_login")) {
+    $ma_kh = $_POST['ma_kh'];
+    $mat_khau = $_POST['mat_khau'];
     $user = khach_hang_select_by_id($ma_kh);
     if ($user) {
         if ($user['mat_khau'] == $mat_khau) {

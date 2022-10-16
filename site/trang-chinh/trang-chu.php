@@ -21,31 +21,12 @@
     <div class="content">
         <section class="favourite">
             <div class="row">
-                <h3 class="title">Top 10</h3>
+                <h3 class="title">Popular</h3>
             </div>
             <div class="row">
-                <div class="grid">
-                    <?php
-                    foreach ($dac_biet_list as $item) {
-                    ?>
-                        <div class="grid-column">
-                            <a class="product" href="index.php?chi-tiet&ma_hh=<?= $item['ma_hh'] ?>">
-                                <div class="product-image">
-                                    <img src="<?= $CONTENT_URL ?>/images/products/<?= $item['hinh'] ?>" />
-                                </div>
-                                <div class="product-content">
-                                    <div class="product-info">
-                                        <h2 class="product-title"><?= $item['ten_hh'] ?></h2>
-                                        <p class="product-price"><?= $item['don_gia'] ?>VND</p>
-                                    </div>
-                                    <button class="product-action"><i class="fa-solid fa-plus"></i></button>
-                                </div>
-                            </a>
-                        </div>
-                    <?php
-                    }
-                    ?>
-                </div>
+                <?php
+                require '../layout/top10.php';
+                ?>
             </div>
         </section>
         <section class="cate">

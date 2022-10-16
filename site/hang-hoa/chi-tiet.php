@@ -38,13 +38,13 @@ hang_hoa_tang_so_luot_xem($ma_hh);
         </div>
         <div class="product">
             <div class="product-image">
-                <div class="boder">
+                <div class="">
                     <img src="<?= $CONTENT_URL ?>/images/products/<?= $hinh ?>" width="80%">
                 </div>
             </div>
             <div class="product-infor">
                 <p class="product-name"><?= $ten_hh ?></p>
-                <span>Viewer : <?= $so_luot_xem ?></span> <br/>
+                <span>Viewer : <?= $so_luot_xem ?></span> <br />
                 REVIEW FOR PRODUCT
                 <div class="rate"><a class="rate__star" id="rate-star-1" href="#rate-star-1"><i class="fa fa-star"></i></a><a class="rate__star" id="rate-star-2" href="#rate-star-2"><i class="fa fa-star"></i></a><a class="rate__star" id="rate-star-3" href="#rate-star-3"><i class="fa fa-star"></i></a><a class="rate__star" id="rate-star-4" href="#rate-star-4"><i class="fa fa-star"></i></a><a class="rate__star" id="rate-star-5" href="#rate-star-5"><i class="fa fa-star"></i></a>
                 </div>16 customer rated
@@ -64,8 +64,24 @@ hang_hoa_tang_so_luot_xem($ma_hh);
             </div>
         </div>
     </div>
-    <?php require 'binh-luan.php'; ?>
-    <?php require 'hang-cung-loai.php'; ?>
+    <div class="prod-cung-loai">
+        <div class="row">
+            <h2 class="title">related products</h2>
+        </div>
+        <div class="row">
+            <?php require 'hang-cung-loai.php'; ?>
+        </div>
+    </div>
+    <div class="comment">
+        <div class="row">
+            <h2 class="title">Comments</h2>
+        </div>
+        <div class="row">
+            <ul class="comment-list">
+                <?php require 'binh-luan.php'; ?>
+            </ul>
+        </div>
+    </div>
 </body>
 
 </html>

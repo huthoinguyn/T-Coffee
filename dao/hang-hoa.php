@@ -44,18 +44,36 @@ function hang_hoa_tang_so_luot_xem($ma_hh)
     $sql = "UPDATE hang_hoa SET so_luot_xem = so_luot_xem + 1 WHERE ma_hh = ?";
     pdo_execute($sql, $ma_hh);
 }
-function hang_hoa_select_top10()
-{
-}
+// function hang_hoa_select_top10()
+// {
+//     $sql = "SELECT * FROM hang_hoa WHERE so_luot_xem > 0 ORDER BY so_luot_xem DESC LIMIT 0,10";
+//     return pdo_query($sql);
+// }
 function hang_hoa_select_dac_biet()
 {
-    $sql = "SELECT * FROM hang_hoa";
+    $sql = "SELECT * FROM hang_hoa WHERE dac_biet = 1";
     return pdo_query($sql);
 }
 function hang_hoa_select_by_loai($ma_loai)
 {
-    return [];
+    $sql = "SELECT * FROM hang_hoa WHERE ma_loai=?";
+    return pdo_query($sql, $ma_loai);
 }
-function hang_hoa_select_keyword()
+function hang_hoa_select_keyword($keyword)
 {
+    $sql = "SELECT * FROM hang_hoa hh"
+        . "JOIN loai lo ON lo.ma_loai-hh.ma_loai"
+        . "WHERE ten_hh LIKE ? OR ten_loai LIKE ?";
+    return pdo_query($sql, "%" . $keyword . "%", "%" . $keyword . "%");
+}
+
+function hang_hoa_select_page()
+{
+    global $SL_PER_PAGE;
+    if (!isset($_SESSION['page_no'])) {
+        $_SESSION['page_no'] = 0;
+    }
+    if (!isset($_SESSION['page_count'])) {
+        $_SESSION['page_count'] = 1;
+    }
 }
