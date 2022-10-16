@@ -6,5 +6,8 @@
         <li><a href="?lien-he">Contact</a></li>
         <li><a href="?hoi-dap">Q&A</a></li>
         <li><a href="?gop-y">Feedback</a></li>
+        <div class="user-icon">
+            <i class="fa-regular fa-user"></i>
+        </div>
     </ul>
 </nav>
