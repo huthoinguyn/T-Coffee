@@ -85,6 +85,27 @@
                 localStorage.setItem("showForm", "");
             }
         })
+
+        const loginForm = document.querySelector('.login-form'),
+            loginBtn = document.querySelector('.login-form button')
+        loginForm.onsubmit = (e) => {
+            e.preventDefault()
+        }
+        loginBtn.onclick = () => {
+            const xhr = new XMLHttpRequest(); // create new XML Object
+            xhr.open("POST", "../tai-khoan/dang-nhap.php?btn_login", true);
+            xhr.onload = () => {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status == 200) {
+                        let data = xhr.response;
+                        alert(data)
+                        location.reload()
+                    }
+                }
+            };
+            let formData = new FormData(loginForm); //create new formData
+            xhr.send(formData); //send formData to PHP
+        };
     </script>
 </body>
 

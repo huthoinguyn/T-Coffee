@@ -1,4 +1,4 @@
-<form action="../tai-khoan/dang-nhap.php" method="post">
+<form class="login-form" action="../tai-khoan/dang-nhap.php" method="post">
     <div>
         <div>Tên đăng nhập</div>
         <input name="ma_kh" value="<?= $ma_kh ?>">

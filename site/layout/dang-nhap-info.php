@@ -40,11 +40,21 @@
             object-fit: cover;
         }
 
-        .logout {
+        .logout-form {
             width: 100%;
-            display: block;
-            text-align: center;
-            color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 24px;
+        }
+
+        .logout-form button {
+            padding: 12px 24px;
+            border-radius: 4px;
+            color: #fff;
+            background-color: #000;
+            outline: none;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -61,13 +71,41 @@
                 </div>
                 <div class="user-content">
                     <h3 class="name">Le Tan Tai</h3>
+                    <p>Khach hang</p>
                 </div>
                 <div class="row">
-                    <a class="logout" href="../tai-khoan/dang-nhap.php?btn_logoff">Log out</a>
+                    <form class="logout-form" method="POST">
+                        <input type="hidden" name="btn_logoff">
+                        <button>
+                            Log Out
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        const logOutForm = document.querySelector('.logout-form'),
+            logOutBtn = document.querySelector('.logout-form button')
+        logOutForm.onsubmit = (e) => {
+            e.preventDefault()
+        }
+        logOutBtn.onclick = () => {
+            const xhr = new XMLHttpRequest(); // create new XML Object
+            xhr.open("POST", "../tai-khoan/dang-nhap.php?btn_logoff", true);
+            xhr.onload = () => {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status == 200) {
+                        let data = xhr.response;
+                        alert(data)
+                        location.reload()
+                    }
+                }
+            };
+            let formData = new FormData(logOutForm); //create new formData
+            xhr.send(formData); //send formData to PHP
+        };
+    </script>
 </body>
 
 </html>
