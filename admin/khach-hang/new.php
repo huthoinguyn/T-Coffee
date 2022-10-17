@@ -9,11 +9,18 @@
         form {
             display: flex;
             flex-wrap: wrap;
+            max-width: 640px;
         }
 
         .form-group {
             flex: 0 0 100%;
             max-width: 100%;
+        }
+
+        .vai-tro-form {
+            display: flex;
+            justify-content: center;
+            gap: 28px;
         }
     </style>
 </head>
@@ -47,7 +54,16 @@
             </div>
             <div class="form-group">
                 <label for="">Vai tro</label>
-                <input type="text" name="vai_tro">
+                <div class="vai-tro-form">
+                    <div>
+                        <input type="radio" name="vai_tro" value="1">
+                        <label for="">Admin</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="vai_tro" value="0">
+                        <label for="">Customer</label>
+                    </div>
+                </div>
             </div>
             <div class="form-group">
                 <button type="submit" name="btn_insert">Add</button>

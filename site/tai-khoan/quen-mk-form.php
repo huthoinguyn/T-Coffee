@@ -1,9 +1,4 @@
-<?php
-if (strlen($MESSAGE)) {
-    echo "<h5>$MESSAGE</h5>";
-}
-?>
-<form action="quen-mk.php" method="post">
+<form class="forgot-form" action="quen-mk.php" method="post">
     <div>
         <label>Tên đăng nhập</label>
         <input name="ma_kh">

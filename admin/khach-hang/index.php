@@ -46,6 +46,7 @@ if (exist_param("btn_insert")) {
     } catch (Exception $exc) {
         $MESSAGE = "Cập nhật thất bại!";
     }
+    $items = khach_hang_select_all();
     $VIEW_NAME = "khach-hang/list.php";
 } else if (exist_param("btn_delete")) {
     try {

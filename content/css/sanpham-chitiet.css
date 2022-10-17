@@ -10,7 +10,7 @@
 .product-slide {
   width: 100%;
   height: 320px;
-  background-image: url(../../uploads/image/bg2-slide.png);
+  background-image: url('../../uploads/images/bg2-slide.png');
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.9;
