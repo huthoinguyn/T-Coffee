@@ -29,6 +29,10 @@
             text-align: center;
         }
 
+        .user-content {
+            margin-bottom: 16px;
+        }
+
         .user-img {
             max-width: 120px;
             flex: 0 0 120px;
@@ -58,17 +62,53 @@
             cursor: pointer;
         }
 
-        #menu-site-default {
+        .go-admin,
+        .update-account,
+        .change-password {
             width: 100%;
-            background-color: b76935;
+            text-align: center;
+            display: block;
+            color: blue;
         }
 
-        .wraper {
+        .user-update-account,
+        .user-change-password {
+            position: absolute;
+            top: 0;
+            right: 0;
             width: 100%;
+            height: 100%;
+            background-color: #fff;
+            z-index: 99999;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: all 300ms ease;
+            box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
         }
 
-        .container {
-            width: 100%;
+        .user-update-account.active,
+        .user-change-password.active {
+            transform: scaleX(1);
+        }
+
+        .change-close-icon,
+        .update-close-icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 20px;
+            font-size: 24px;
+            cursor: pointer;
+            transition: all 200ms ease;
+        }
+
+        .change-close-icon:hover,
+        .update-close-icon:hover {
+            transform: scale(1.3);
         }
     </style>
 </head>
@@ -88,6 +128,17 @@
                     <p><?php echo ($_SESSION['user']['vai_tro'] == 1) ? "Admin" : "Customer"  ?></p>
                 </div>
                 <div class="row">
+                    <a class="change-password" href="">Change Password</a>
+                </div>
+                <div class="row">
+                    <a class="update-account" href="">Update Account</a>
+                </div>
+                <div class="row">
+                    <?php
+                    echo ($_SESSION['user']['vai_tro'] == 1) ? "<a class='go-admin' href='../../admin/'>Go to Admin</a>" : "";
+                    ?>
+                </div>
+                <div class="row">
                     <form class="logout-form" method="POST">
                         <input type="hidden" name="btn_logoff">
                         <button>
@@ -98,6 +149,8 @@
             </div>
         </div>
     </div>
+    <?php require '../tai-khoan/doi-mk-form.php' ?>
+    <?php require '../tai-khoan/cap-nhat-tk-form.php' ?>
     <script>
         const logOutForm = document.querySelector('.logout-form'),
             logOutBtn = document.querySelector('.logout-form button')
