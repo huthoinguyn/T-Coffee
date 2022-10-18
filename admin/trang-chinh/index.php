@@ -8,8 +8,10 @@ if (exist_param("hang-hoa")) {
     $VIEW_NAME = "loai-hang/index.php";
 } else if (exist_param("khach-hang")) {
     $VIEW_NAME = "khach-hang/index.php";
-} else if (exist_param("hoi-dap")) {
-    $VIEW_NAME = "";
+} else if (exist_param("binh-luan")) {
+    $VIEW_NAME = "binh-luan/index.php";
+} else if (exist_param("thong-ke")) {
+    $VIEW_NAME = "thong-ke/index.php";
 } else {
     $VIEW_NAME = "trang-chinh/home.php";
 }
