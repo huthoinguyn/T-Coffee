@@ -15,6 +15,12 @@
             flex: 0 0 100%;
             max-width: 100%;
         }
+
+        .vai-tro-form {
+            display: flex;
+            justify-content: center;
+            gap: 28px;
+        }
     </style>
 </head>
 
@@ -36,7 +42,7 @@
             </div>
             <div class="form-group">
                 <label for="">Ho Ten</label>
-                <input type="text" name="ho_ten" value="<?= $ho_ten ?>"/>
+                <input type="text" name="ho_ten" value="<?= $ho_ten ?>" />
             </div>
             <div class="form-group">
                 <label for="">Kich Hoat</label>
@@ -48,7 +54,16 @@
             </div>
             <div class="form-group">
                 <label for="">Vai Tro</label>
-                <input type="text" name="vai_tro" value='<?= $vai_tro ?>'>
+                <div class="vai-tro-form">
+                    <div>
+                        <input type="radio" name="vai_tro" value="1" <?php echo ($vai_tro == 1) ? "checked" : "" ?>>
+                        <label for="">Admin</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="vai_tro" value="0" <?php echo ($vai_tro == 0) ? "checked" : "" ?>>
+                        <label for="">Customer</label>
+                    </div>
+                </div>
             </div>
             <div class="form-group">
                 <input type="hidden" name="ma_kh" value="<?= $ma_kh ?>">

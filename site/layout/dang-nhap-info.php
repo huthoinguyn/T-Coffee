@@ -26,6 +26,7 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            text-align: center;
         }
 
         .user-img {
@@ -56,6 +57,19 @@
             outline: none;
             cursor: pointer;
         }
+
+        #menu-site-default {
+            width: 100%;
+            background-color: b76935;
+        }
+
+        .wraper {
+            width: 100%;
+        }
+
+        .container {
+            width: 100%;
+        }
     </style>
 </head>
 
@@ -67,11 +81,11 @@
         <div class="row">
             <div class="user-info">
                 <div class="user-img">
-                    <img src="../../content/images/users/hinh1.jpg" alt="">
+                    <img src="../../content/images/users/<?php echo $_SESSION['user']['hinh'] ?>" alt="">
                 </div>
                 <div class="user-content">
-                    <h3 class="name">Le Tan Tai</h3>
-                    <p>Khach hang</p>
+                    <h3 class="name"><?php echo $_SESSION['user']['ho_ten'] ?></h3>
+                    <p><?php echo ($_SESSION['user']['vai_tro'] == 1) ? "Admin" : "Customer"  ?></p>
                 </div>
                 <div class="row">
                     <form class="logout-form" method="POST">

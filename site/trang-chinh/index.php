@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- CSS -->
+    <link rel="stylesheet" href="../../content/css/login.css">
     <link rel="stylesheet" href="../../content/css/sanpham.css">
     <link rel="stylesheet" href="../../content/css/testim.css">
     <link rel="stylesheet" href="../../content/css/style.css">
@@ -41,6 +42,7 @@
     require '../layout.php';
     ?>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+    <script src="../../content/js/login.js"></script>
     <script src="../../content/js/script.js"></script>
     <script src="../../content/js/testim.js"></script>
     <script>
