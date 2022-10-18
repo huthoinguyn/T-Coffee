@@ -62,19 +62,7 @@
             cursor: pointer;
         }
 
-        #menu-site-default {
-            width: 100%;
-            background-color: b76935;
-        }
-
-        .wraper {
-            width: 100%;
-        }
-
-        .container {
-            width: 100%;
-        }
-
+        .go-admin,
         .update-account,
         .change-password {
             width: 100%;
@@ -146,6 +134,11 @@
                     <a class="update-account" href="">Update Account</a>
                 </div>
                 <div class="row">
+                    <?php
+                    echo ($_SESSION['user']['vai_tro'] == 1) ? "<a class='go-admin' href='../../admin/'>Go to Admin</a>" : "";
+                    ?>
+                </div>
+                <div class="row">
                     <form class="logout-form" method="POST">
                         <input type="hidden" name="btn_logoff">
                         <button>
@@ -156,16 +149,8 @@
             </div>
         </div>
     </div>
-    <div class="user-update-account">
-        <div class="change-close-icon">
-            <i class="fa-solid fa-close"></i>
-        </div>
-    </div>
-    <div class="user-change-password">
-        <div class="update-close-icon">
-            <i class="fa-solid fa-close"></i>
-        </div>
-    </div>
+    <?php require '../tai-khoan/doi-mk-form.php' ?>
+    <?php require '../tai-khoan/cap-nhat-tk-form.php' ?>
     <script>
         const logOutForm = document.querySelector('.logout-form'),
             logOutBtn = document.querySelector('.logout-form button')
@@ -187,32 +172,6 @@
             let formData = new FormData(logOutForm); //create new formData
             xhr.send(formData); //send formData to PHP
         };
-
-        const changeLink = document.querySelector('.change-password'),
-            updateLink = document.querySelector('.update-account'),
-            update = document.querySelector('.user-update-account'),
-            changeContainer = document.querySelector('.user-change-password'),
-            updateCloseIcon = document.querySelector('.update-close-icon'),
-            changeCloseIcon = document.querySelector('.change-close-icon')
-
-        // Update
-        updateLink.onclick = (e) => {
-            e.preventDefault()
-            update.classList.add('active')
-        }
-        updateCloseIcon.onclick = (e) => {
-            update.classList.remove('active')
-        }
-
-        // Change
-        changeLink.onclick = (e) => {
-            e.preventDefault()
-            changeContainer.classList.add('active')
-        }
-        changeCloseIcon.onclick = (e) => {
-            console.log('hi');
-            changeContainer.classList.remove('active')
-        }
     </script>
 </body>
 

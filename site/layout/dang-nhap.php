@@ -6,7 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        
+        .form-group.avatar {
+            width: 120px;
+            height: 100px;
+            overflow: hidden;
+        }
+
+        .form-group.avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     </style>
 </head>
 
@@ -28,28 +38,28 @@
     <script>
         const loginForm = document.querySelector('.login-form'),
             loginBtn = document.querySelector('.login-form button')
-        loginForm.onsubmit = (e) => {
-            e.preventDefault()
+        if (loginForm) {
+            loginForm.onsubmit = (e) => {
+                e.preventDefault()
+            }
         }
-        loginBtn.onclick = () => {
-            const xhr = new XMLHttpRequest(); // create new XML Object
-            xhr.open("POST", "../tai-khoan/dang-nhap.php?btn_login", true);
-            xhr.onload = () => {
-                if (xhr.readyState === XMLHttpRequest.DONE) {
-                    if (xhr.status == 200) {
-                        let data = xhr.response;
-                        alert(data)
-                        location.reload()
+        if (loginBtn) {
+            loginBtn.onclick = () => {
+                const xhr = new XMLHttpRequest(); // create new XML Object
+                xhr.open("POST", "../tai-khoan/dang-nhap.php?btn_login", true);
+                xhr.onload = () => {
+                    if (xhr.readyState === XMLHttpRequest.DONE) {
+                        if (xhr.status == 200) {
+                            let data = xhr.response;
+                            alert(data)
+                            location.reload()
+                        }
                     }
-                }
+                };
+                let formData = new FormData(loginForm); //create new formData
+                xhr.send(formData); //send formData to PHP
             };
-            let formData = new FormData(loginForm); //create new formData
-            xhr.send(formData); //send formData to PHP
-        };
-
-        // == Forgot Password
-
-        const forgot = document.querySelector('.forgot')
+        }
     </script>
 </body>
 
