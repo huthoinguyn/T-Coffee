@@ -65,8 +65,8 @@
             <button name="btn_login">Đăng nhập</button>
         </div>
         <div>
-            <li><a class="forgot" href="../tai-khoan/quen-mk-form.php">Quên mật khẩu</a></li>
-            <li><a class="register" href="../tai-khoan/dang-ky.php">Đăng ký thành viên</a></li>
+            <li><a class="forgot" href="../tai-khoan/quen-mk-form.php">Forgot password</a></li>
+            <li><a class="register" href="../tai-khoan/dang-ky.php">Register</a></li>
         </div>
     </form>
     <div class="user-forgot">
@@ -75,15 +75,15 @@
         </div>
         <form class="forgot-form" action="quen-mk.php" method="post">
             <div>
-                <label>Tên đăng nhập</label>
+                <label>Username</label>
                 <input name="ma_kh">
             </div>
             <div>
-                <label>Địa chỉ email</label>
+                <label>Email</label>
                 <input name="email">
             </div>
             <div>
-                <button name="btn_forgot">Tìm lại mật khẩu</button>
+                <button name="btn_forgot">Find Password</button>
             </div>
         </form>
     </div>
