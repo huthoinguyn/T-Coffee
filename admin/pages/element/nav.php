@@ -1,11 +1,11 @@
 <nav>
     <div class="logo-name">
         <div class="logo-image">
-            <img src="images/avatar.jpg" alt="" />
+            <img src="../../content/images/users/<?php echo $_SESSION['user']['hinh'] ?>" alt="" />
         </div>
 
         <span class="logo_name">
-            Phan Thanh Qui
+            <?php echo $_SESSION['user']['ho_ten'] ?>
         </span>
     </div>
     <div class="menu-items">
@@ -44,6 +44,12 @@
                 <a href="../thong-ke/">
                     <i class="uil uil-comments"></i>
                     <span class="link-name">Thong ke</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../site/trang-chinh/">
+                    <i class="uil uil-comments"></i>
+                    <span class="link-name">Go to website</span>
                 </a>
             </li>
         </ul>

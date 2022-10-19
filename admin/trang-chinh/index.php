@@ -1,5 +1,4 @@
 <?php
-
 require_once '../../global.php';
 require '../../pdo.php';
 if (exist_param("hang-hoa")) {

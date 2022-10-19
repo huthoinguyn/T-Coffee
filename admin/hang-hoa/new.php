@@ -9,11 +9,22 @@
         form {
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
+            padding-left: 200px;
         }
 
         .form-group {
             flex: 0 0 100%;
             max-width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+        }
+
+        .form-group input {
+            padding: 6px 9px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
         }
     </style>
 </head>
