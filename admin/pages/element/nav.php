@@ -41,8 +41,8 @@
                 </a>
             </li>
             <li>
-                <a href="../thong-ke/>
-                    <i class="uil uil-share"></i>
+                <a href="../thong-ke/">
+                    <i class="uil uil-comments"></i>
                     <span class="link-name">Thong ke</span>
                 </a>
             </li>

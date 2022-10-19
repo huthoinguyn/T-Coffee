@@ -54,12 +54,28 @@
             height: 100%;
             object-fit: cover;
         }
+
+        .prod-list {
+            height: 85vh;
+            overflow-y: auto;
+        }
+
+        .title {
+            height: 7vh;
+        }
+
+        .insert {
+            height: 8vh;
+            padding: 16px;
+        }
     </style>
 </head>
 
 <body>
-    <div class="row">
+    <div class="row title">
         <h1>List</h1>
+    </div>
+    <div class="row prod-list">
         <ul class="prod_item">
             <li>Ten</li>
             <li class="prod-price">Don Gia</li>
@@ -73,6 +89,7 @@
             <li class="prod-action"></li>
         </ul>
         <?php
+        require '../../dao/loai.php';
         $items = hang_hoa_select_all();
         foreach ($items as $item) { ?>
             <ul class="prod_item">
@@ -85,13 +102,13 @@
                 <li><?= $item['ngay_nhap'] ?></li>
                 <li><?= $item['mo_ta'] ?></li>
                 <li class="prod-view"><?= $item['so_luot_xem'] ?></li>
-                <li><?= $item['ma_loai'] ?></li>
+                <li><?= loai_select_by_id($item['ma_loai'])['ten_loai'] ?></li>
                 <li class="prod-action"><a href="index.php?btn_edit&ma_hh=<?= $item['ma_hh'] ?>">Sua</a></li>
                 <li class="prod-action"><a href="index.php?btn_delete&ma_hh=<?= $item['ma_hh'] ?>">Xoa</a></li>
             </ul>
         <?php } ?>
     </div>
-    <div class="row">
+    <div class="row insert">
         <a href="index.php" class="btn">Insert</a>
     </div>
 </body>

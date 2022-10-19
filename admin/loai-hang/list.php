@@ -34,7 +34,7 @@
 </head>
 
 <body>
-    <div class="row">
+    <div class="row prod-list">
         <h1>List</h1>
         <ul class="prod_item">
             <li>Ten loai hang</li>
