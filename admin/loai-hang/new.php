@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Category</title>
+    <link rel="stylesheet" href="../../content/css/product.css">
     <style>
         form {
             display: flex;
             flex-wrap: wrap;
+            margin-right: 300px
         }
 
         .form-group {
