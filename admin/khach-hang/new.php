@@ -29,7 +29,7 @@
     <div class="row">
         <form action="index.php" method="post" enctype="multipart/form-data">
             <div class="form-group">
-                <label for="">Ma KH</label>
+                <label for="">Username</label>
                 <input type="text" name="ma_kh">
             </div>
             <div class="form-group">
@@ -37,12 +37,15 @@
                 <input type="text" name="ho_ten">
             </div>
             <div class="form-group">
-                <label for="">MK</label>
+                <label for="">Password</label>
                 <input type="text" name="mat_khau">
             </div>
             <div class="form-group">
-                <label for="">Kich Hoat</label>
-                <input type="text" name="kich_hoat">
+                <label for="">Active</label>
+                <select name="kich_hoat" id="">
+                    <option value="1" selected>Active</option>
+                    <option value="0">Unactive</option>
+                </select>
             </div>
             <div class="form-group">
                 <label for="">Image</label>
@@ -53,7 +56,7 @@
                 <input type="email" name="email" />
             </div>
             <div class="form-group">
-                <label for="">Vai tro</label>
+                <label for="">Position</label>
                 <div class="vai-tro-form">
                     <div>
                         <input type="radio" name="vai_tro" value="1">

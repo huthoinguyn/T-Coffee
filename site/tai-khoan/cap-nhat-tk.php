@@ -12,7 +12,7 @@ if (exist_param("btn_update")) {
     $kich_hoat = $_POST['kich_hoat'];
     $vai_tro = $_POST['vai_tro'];
     try {
-        khach_hang_update($ma_kh, $mat_khau, $ho_ten, $email, $hinh, $kich_hoat, $vai_tro);
+        khach_hang_update($ma_kh, $mat_khau, $ho_ten, $kich_hoat, $hinh, $email, $vai_tro);
         $MESSAGE = "Cập nhật thông tin thành viên thành công!";
         echo "Update successfully";
         $_SESSION['user'] = khach_hang_select_by_id($ma_kh);

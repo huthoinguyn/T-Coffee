@@ -89,5 +89,4 @@ function pdo_query_value($sql)
 // $rows = pdo_query($sql);
 // => Truy vấn 1 loại $sql = "SELECT * FROM loai WHERE ma_loai=?";
 // $row = pdo_query_one($sql, $ma_loai);
-// => Đếm số loại $sql = "SELECT count(*) FROM loai WHERE ma_loai=?";
-// $count = pdo_query_value($sql, $ma_loai) ;
+// => Đếm số loại 

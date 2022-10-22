@@ -50,23 +50,25 @@
 
 <body>
     <form class="login-form" action="../tai-khoan/dang-nhap.php" method="post">
-        <div>
-            <div>Tên đăng nhập</div>
+        <div class="form-group">
+            <label>Username</label>
             <input name="ma_kh" value="<?= $ma_kh ?>">
         </div>
-        <div>
-            <div>Mật khẩu</div>
+        <div class="form-group">
+            <label>Password</label>
             <input name="mat_khau" type="password" value="<?= $mat_khau ?>">
         </div>
-        <div>
-            <input name="ghi_nho" type="checkbox" checked> Ghi nhớ tài khoản?
+        <div class="form-group">
+            <input name="ghi_nho" type="checkbox" checked> Remember me?
         </div>
         <div class="form-group">
             <button name="btn_login">Đăng nhập</button>
         </div>
-        <div>
-            <li><a class="forgot" href="../tai-khoan/quen-mk-form.php">Forgot password</a></li>
-            <li><a class="register" href="../tai-khoan/dang-ky.php">Register</a></li>
+        <div class="form-group">
+            <a class="forgot" href="../tai-khoan/quen-mk-form.php">Forgot password</a>
+        </div>
+        <div class="form-group">
+            <a class="register" href="../tai-khoan/dang-ky.php">Register</a>
         </div>
     </form>
     <div class="user-forgot">
@@ -74,15 +76,15 @@
             <i class="fa-solid fa-close"></i>
         </div>
         <form class="forgot-form" action="quen-mk.php" method="post">
-            <div>
+            <div class="form-group">
                 <label>Username</label>
                 <input name="ma_kh">
             </div>
-            <div>
+            <div class="form-group">
                 <label>Email</label>
                 <input name="email">
             </div>
-            <div>
+            <div class="form-group">
                 <button name="btn_forgot">Find Password</button>
             </div>
         </form>
@@ -164,23 +166,34 @@
             xhr.send(formData); //send formData to PHP
         }
         const registerForm = document.querySelector('.register-form'),
-            registerBtn = document.querySelector('.register-form button')
+            registerBtn = document.querySelector('.register-form button'),
+            inpPassword = document.querySelector('input[name = "mat_khau"]'),
+            inpPassword2 = document.querySelector('input[name = "mat_khau2"]'),
+            inpEmail = document.querySelector('input[name = "email"]')
+        inpUsername = document.querySelector('input[name = "ma_kh"]')
+        inpEmail.oninput = (e) => {
+            console.log(e.target.value);
+        }
         registerForm.onsubmit = (e) => {
             e.preventDefault()
         }
         registerBtn.onclick = () => {
-            const xhr = new XMLHttpRequest(); // create new XML Object
-            xhr.open("POST", "../tai-khoan/dang-ky.php?btn_register", true);
-            xhr.onload = () => {
-                if (xhr.readyState === XMLHttpRequest.DONE) {
-                    if (xhr.status == 200) {
-                        let data = xhr.response;
-                        alert(data)
+            if (inpPassword !== "" && inpPassword2 !== "" && inpUsername !== "" && inpEmail !== "") {
+                const xhr = new XMLHttpRequest(); // create new XML Object
+                xhr.open("POST", "../tai-khoan/dang-ky.php?btn_register", true);
+                xhr.onload = () => {
+                    if (xhr.readyState === XMLHttpRequest.DONE) {
+                        if (xhr.status == 200) {
+                            let data = xhr.response;
+                            alert(data)
+                        }
                     }
-                }
-            };
-            let formData = new FormData(registerForm); //create new formData
-            xhr.send(formData); //send formData to PHP
+                };
+                let formData = new FormData(registerForm); //create new formData
+                xhr.send(formData); //send formData to PHP
+            } else {
+                alert('All field are require')
+            }
         }
     </script>
 </body>

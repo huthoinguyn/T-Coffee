@@ -5,76 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined|Material+Icons" rel="stylesheet" />
-    <link rel="stylesheet" href="../content/css/sanpham.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://kit.fontawesome.com/e2ac9cc532.js" crossorigin="anonymous"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="../../content/css/lienhe.css">
     <title>T-Coffee Contact</title>
 </head>
 
 <body>
-    <section class="contact-form-container">
-        <div class="contact-us">
-            <div class="contact-header">
-                <h1>
-                    &#9135;&#9135;&#9135;&#9135;&nbsp;&nbsp;CONTACT US
-                </h1>
+    <div class="contact-container">
+        <div class="contact-wrap">
+            <div class="map-wrap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62860.63914868875!2d105.72255072784505!3d10.034185113828485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0629f6de3edb7%3A0x527f09dbfb20b659!2zQ-G6p24gVGjGoSwgTmluaCBLaeG7gXUsIEPhuqduIFRoxqEsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1658845557769!5m2!1svi!2s" style="border: 0" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
             </div>
-            <div class="social-bar">
-                <ul>
-                    <li>
-                        <i class="fab fa-facebook-f"></i>
-                    </li>
-                    <li>
-                        <i class="fab fa-twitter"></i>
-                    </li>
-                    <li>
-                        <i class="fab fa-instagram"></i>
-                    </li>
-                    <li>
-                        <i class="fab fa-dribbble"></i>
-                    </li>
-                </ul>
+            <div class="form">
+                <h3 class="title">Send us your message</h3>
+                <form action="">
+                    <input type="text" placeholder="Full Name" />
+                    <input type="tel" placeholder="Phone Number" />
+                    <input type="email" placeholder="Email Address" />
+                    <textarea name="" id="" rows="6" placeholder="Message"></textarea>
+                    <input type="submit" value="Send" class="button">
+                </form>
             </div>
         </div>
-        <div class="header">
-            <h1>
-                Let's Get Started
-            </h1>
-            <h2>
-                Contact us to start your next project!
-            </h2>
-        </div>
-        <div class="address">
-            <i class="fas fa-map-marker-alt"></i>
-            <h3>
-                8266 Gygax
-            </h3>
-            <h3>
-                Norfolk, VA
-            </h3>
-        </div>
-        <div class="phone">
-            <i class="fas fa-phone-alt"></i>
-            <h3>
-                757 287 1608
-            </h3>
-        </div>
-        <div class="email">
-            <i class="fas fa-envelope"></i>
-            <h3>
-                hello@adept.com
-            </h3>
-        </div>
-        <div class="contact-form">
-            <form>
-                <input placeholder="Name" type="text" /><input placeholder="Email" type="email" /><textarea placeholder="Tell us about your project..." rows="4"></textarea><button type="button">SEND </button>
-            </form>
-        </div>
-    </section>
+    </div>
 </body>
 
 </html>

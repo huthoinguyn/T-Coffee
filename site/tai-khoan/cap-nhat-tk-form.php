@@ -17,7 +17,7 @@
         </div>
         <div class="form-group">
             <label for="">Email</label>
-            <input name="email" value="<?= $email ?>">
+            <input type="email" name="email" value="<?= $email ?>">
         </div>
         <div class="form-group">
             <label for="">Avatar</label>

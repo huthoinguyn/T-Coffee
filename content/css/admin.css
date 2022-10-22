@@ -19,6 +19,7 @@
   --box1-color: #4da3ff;
   --box2-color: #ffe6ac;
   --box3-color: #e7d1fc;
+  --box4-color: #a5ffbc;
   --title-icon-color: #fff;
 
   /* ====== Transition ====== */
@@ -356,6 +357,9 @@ nav.close ~ .dashboard .top {
 }
 .boxes .box.box3 {
   background-color: var(--box3-color);
+}
+.boxes .box.box4 {
+  background-color: var(--box4-color);
 }
 .dash-content .activity .activity-data {
   display: flex;

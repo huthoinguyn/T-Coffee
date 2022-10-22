@@ -7,7 +7,7 @@ require '../../dao/khach-hang.php';
 if (exist_param("btn_login")) {
     $ma_kh = $_POST['ma_kh'];
     $mat_khau = $_POST['mat_khau'];
-    $user = khach_hang_select_by_id($ma_kh);
+    $user = khach_hang_login($ma_kh);
     if ($user) {
         if ($user['mat_khau'] == $mat_khau) {
             $MESSAGE = "Đăng nhập thành công!";
@@ -30,7 +30,7 @@ if (exist_param("btn_login")) {
             echo "Password is not true!";
         }
     } else {
-        echo "Username is not true!";
+        echo "Username is not true or your account is unactive";
         $MESSAGE = "Sai mã đăng nhập!";
     }
 } else {

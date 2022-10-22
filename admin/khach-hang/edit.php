@@ -46,7 +46,10 @@
             </div>
             <div class="form-group">
                 <label for="">Kich Hoat</label>
-                <input type="text" name="kich_hoat" value='<?= $kich_hoat ?>'>
+                <select name="kich_hoat" id="">
+                    <option value="1" <?php echo ($kich_hoat == 1) ? "selected" : "" ?>>Active</option>
+                    <option value="0" <?php echo ($kich_hoat == 0) ? "selected" : "" ?>>Unactive</option>
+                </select>
             </div>
             <div class="form-group">
                 <label for="">Email</label>

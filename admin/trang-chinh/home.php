@@ -1,2 +1,2 @@
-<?php 
-include '../pages/main/dashboard.php';
+<?php
+include '../thong-ke/index.php';

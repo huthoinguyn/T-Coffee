@@ -1,20 +1,36 @@
-.charts .chart-container {
-  background-color: var(--panel-color);
-  transition: var(--tran-05);
-}
-
-.charts .chart-container h3 {
-  color: var(--text-color);
-  transition: var(--tran-05);
-}
-
-.row {
+.chart-wrap {
+  width: 60%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-around;
+  align-items: flex-end;
 }
 
-.row .col-lg-6 {
-  width: 49%;
-  border-radius: 4px;
-  overflow: hidden;
+.chart-name {
+  text-align: center;
+}
+
+.h-40vh {
+  height: 40vh;
+  border-bottom: 1px solid #555;
+}
+
+.cate-chart,
+.prod-chart,
+.comm-chart,
+.cus-chart {
+  width: 60px;
+}
+.cate-chart {
+  background-color: #ff6161;
+}
+.prod-chart {
+  background-color: rgb(93, 255, 166);
+}
+
+.comm-chart {
+  background-color: rgb(76, 156, 255);
+}
+.cus-chart {
+  background-color: rgb(225, 254, 130);
 }

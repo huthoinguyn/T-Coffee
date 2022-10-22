@@ -14,6 +14,7 @@
 
     <!----======== CSS ======== -->
     <link rel="stylesheet" href="../../content/css/admin.css" />
+    <link rel="stylesheet" href="../../content/css/form-admin.css" />
 
     <!----===== Iconscout CSS ===== -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
@@ -37,7 +38,7 @@
 
 <body>
     <?php
-    require 'pages/element/nav.php';
+    require 'pages/nav.php';
     ?>
     <main class="dashboard">
         <div class="top">

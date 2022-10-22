@@ -33,18 +33,6 @@
             margin-bottom: 16px;
         }
 
-        .user-img {
-            max-width: 120px;
-            flex: 0 0 120px;
-            overflow: hidden;
-        }
-
-        .user-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
         .logout-form {
             width: 100%;
             display: flex;

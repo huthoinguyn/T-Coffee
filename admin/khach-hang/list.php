@@ -78,7 +78,7 @@
                 </li>
                 <li><?= $item['email'] ?></li>
                 <li><?= ($item['vai_tro'] == 1) ? "Admin" : "Customer" ?></li>
-                <li><?= ($item['kich_hoat'] == 1) ? "Active" : "Chua Active" ?></li>
+                <li><?= ($item['kich_hoat'] == 1) ? "Active" : "Unactive" ?></li>
                 <li class="prod-action"><a href="index.php?btn_edit&ma_kh=<?= $item['ma_kh'] ?>">Sua</a></li>
                 <li class="prod-action"><a href="index.php?btn_delete&ma_kh=<?= $item['ma_kh'] ?>">Xoa</a></li>
             </ul>
