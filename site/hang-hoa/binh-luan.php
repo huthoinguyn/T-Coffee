@@ -3,7 +3,7 @@ require '../../dao/binh-luan.php';
 if (exist_param("noi_dung")) {
     $ma_kh = $_SESSION['user']['ma_kh'];
     $noi_dung = $_POST['noi_dung'];
-    // $ma_hh = $_GET['ma_hh'];
+    $ma_hh = $_GET['ma_hh'];
     $ngay_binh_luan = date_format(date_create(), 'Y-m-d');
     binh_luan_insert($ma_kh, $ma_hh, $noi_dung,  $ngay_binh_luan);
 }
@@ -21,6 +21,6 @@ if (!isset($_SESSION['user'])) {
 } else {
 ?>
     <form action="index.php?chi-tiet&ma_hh=<?= $ma_hh ?>" method="post">
-        <input name="noi_dung" placeholder="write a comment"/><button>Send</button>
+        <input name="noi_dung" placeholder="write a comment" /><button>Send</button>
     </form>
 <?php } ?>

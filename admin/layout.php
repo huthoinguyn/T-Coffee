@@ -27,7 +27,6 @@
         main.dashboard {
             /* margin-left: 300px; */
             height: 100vh;
-            overflow-y: hidden;
         }
 
         nav {

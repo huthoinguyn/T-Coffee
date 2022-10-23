@@ -37,7 +37,7 @@ require_once "../../dao/thong-ke.php";
     </div>
     <?php
     require '../thong-ke/chart.php';
-    // require '../thong-ke/list.php';
+    require '../thong-ke/list.php';
 
     // if (exist_param("chart")) {
     //     $VIEW_NAME = "thong-ke/chart.php";

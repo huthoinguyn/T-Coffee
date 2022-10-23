@@ -231,6 +231,7 @@ body.dark .switch:before {
   width: calc(100% - 250px);
   padding: 10px 14px;
   transition: var(--tran-05);
+  overflow-y: auto;
 }
 nav.close ~ .dashboard {
   left: 73px;
@@ -295,7 +296,7 @@ nav.close ~ .dashboard .top {
 }
 .dashboard .dash-content {
   padding-top: 50px;
-  overflow: auto;
+  overflow-y: auto;
   height: 100%;
 }
 .dash-content .title {

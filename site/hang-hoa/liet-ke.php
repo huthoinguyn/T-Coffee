@@ -1,5 +1,6 @@
 <?php
 // require '../../global.php';
+// require '../../pdo.php';
 // require '../../dao/hang-hoa.php';
 //-------------------------------//
 extract($_REQUEST);

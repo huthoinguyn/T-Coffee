@@ -12,6 +12,18 @@
             display: flex;
         }
 
+        .coffee-container .search form {
+            padding: 12px;
+            justify-content: start;
+        }
+
+        .coffee-container .search input {
+            padding: 9px 6px;
+            border-radius: 6px;
+            outline: none;
+            border: 1px solid #ccc;
+        }
+
         .coffee-container .cate-wrap {
             padding: 24px;
             max-width: 20%;
@@ -39,6 +51,11 @@
 <body>
     <div class="coffee-container">
         <div class="cate-wrap">
+            <div class="row search">
+                <form action="">
+                    <input type="text" name="keywords" placeholder="Search a coffee...">
+                </form>
+            </div>
             <div class="row">
                 <h3 class="title">
                     Categories
@@ -64,6 +81,29 @@
             </div>
         </div>
     </div>
+    <script>
+        const searchForm = document.querySelector('.search form'),
+            searchInp = document.querySelector('.search form input'),
+            contentWrap = document.querySelector('.content-wrap .row')
+
+        searchForm.onsubmit = (e) => {
+            e.preventDefault()
+        }
+        searchInp.oninput = () => {
+            const xhr = new XMLHttpRequest(); // create new XML Object
+            xhr.open("POST", "../hang-hoa/tim-kiem.php", true);
+            xhr.onload = () => {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status == 200) {
+                        let data = xhr.response;
+                        contentWrap.innerHTML = data;
+                    }
+                }
+            };
+            let formData = new FormData(searchForm); //create new formData
+            xhr.send(formData); //send formData to PHP
+        }
+    </script>
 </body>
 
 </html>

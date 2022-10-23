@@ -88,6 +88,6 @@ function check_login()
             return;
         }
     }
-    $_SESSION['request_uri'] = $_SERVER["REQUEST_URI"];
     header("location: $SITE_URL/tai-khoan/dang-nhap.php");
+    $_SESSION['request_uri'] = $_SERVER["REQUEST_URI"];
 }
